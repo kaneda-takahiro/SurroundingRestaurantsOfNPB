@@ -21,8 +21,7 @@ final class ZozoButtonTapViewController: UIViewController {
 
         collectionView.dataSource = self
         
-        let layout = UICollectionViewLayout()
-        
+      
     }
     
 }
