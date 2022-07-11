@@ -31,8 +31,6 @@ final class ZozoButtonView: UIView {
     private func setup() {
        
     }
-    
-    
     @IBAction private func didTapZozoButton(_ sender: UIButton) {
     }
 }

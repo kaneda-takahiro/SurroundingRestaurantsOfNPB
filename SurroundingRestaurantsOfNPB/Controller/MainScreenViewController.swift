@@ -9,13 +9,12 @@ import UIKit
 
 final class MainScreenViewController: UIViewController {
 
-    @IBOutlet weak var zozoButtonView: ZozoButtonView!
+    @IBOutlet private weak var zozoButtonView: ZozoButtonView!
     
+    @IBOutlet private weak var tokyoDomeButtonView: TokyoDomeButtonView!
     
-    @IBOutlet weak var tokyoDomeButtonView: TokyoDomeButtonView!
+    @IBOutlet private weak var bellunaDomeButton: BellunaDomeButtonView!
     
-    
-    @IBOutlet weak var bellunaDomeButtonView: BellunaDomeButtonView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

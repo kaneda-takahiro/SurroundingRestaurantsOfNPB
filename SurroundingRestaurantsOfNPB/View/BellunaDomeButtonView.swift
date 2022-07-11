@@ -8,9 +8,9 @@
 import UIKit
 
 final class BellunaDomeButtonView: UIView {
-    
-  
+
     @IBOutlet private weak var BellunaDomeButton: UIButton!
+ 
     override init(frame: CGRect) {
         super.init(frame: frame)
         loadNib()
@@ -32,6 +32,6 @@ final class BellunaDomeButtonView: UIView {
        
     }
     
-    @IBAction private func didTapBellunaDomeButton(_ sender: UIButton) {
+    @IBAction func didTapBellunaDomeButton(_ sender: UIButton) {
     }
 }

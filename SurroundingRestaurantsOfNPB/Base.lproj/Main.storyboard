@@ -35,13 +35,10 @@
                             <constraint firstItem="GJa-jx-9Wb" firstAttribute="top" secondItem="hGf-Pu-ALU" secondAttribute="top" constant="96" id="3HI-Ri-216"/>
                             <constraint firstItem="GJa-jx-9Wb" firstAttribute="leading" secondItem="hGf-Pu-ALU" secondAttribute="leading" constant="87" id="4NW-YP-iow"/>
                             <constraint firstItem="hGf-Pu-ALU" firstAttribute="bottom" secondItem="VJt-Lk-6jl" secondAttribute="bottom" constant="94" id="4Ua-Fc-TDr"/>
-                            <constraint firstItem="VJt-Lk-6jl" firstAttribute="top" secondItem="KWw-oa-wB2" secondAttribute="bottom" constant="98" id="7ot-wl-thQ"/>
                             <constraint firstItem="KWw-oa-wB2" firstAttribute="leading" secondItem="hGf-Pu-ALU" secondAttribute="leading" constant="87" id="EzY-rm-DH1"/>
                             <constraint firstItem="hGf-Pu-ALU" firstAttribute="trailing" secondItem="GJa-jx-9Wb" secondAttribute="trailing" constant="87" id="MKO-w3-m0J"/>
                             <constraint firstItem="KWw-oa-wB2" firstAttribute="top" secondItem="GJa-jx-9Wb" secondAttribute="bottom" constant="102" id="PtR-4r-pWN"/>
                             <constraint firstItem="VJt-Lk-6jl" firstAttribute="top" secondItem="KWw-oa-wB2" secondAttribute="bottom" constant="98" id="RlO-KV-yCo"/>
-                            <constraint firstItem="VJt-Lk-6jl" firstAttribute="top" secondItem="KWw-oa-wB2" secondAttribute="bottom" constant="98" id="cNc-a2-5E0"/>
-                            <constraint firstItem="KWw-oa-wB2" firstAttribute="top" secondItem="GJa-jx-9Wb" secondAttribute="bottom" constant="102" id="dNT-PQ-cqa"/>
                             <constraint firstItem="KWw-oa-wB2" firstAttribute="top" secondItem="tjz-GQ-IhK" secondAttribute="top" constant="414" id="e2X-h4-aHV"/>
                             <constraint firstItem="hGf-Pu-ALU" firstAttribute="trailing" secondItem="VJt-Lk-6jl" secondAttribute="trailing" constant="87" id="f3z-rs-9uM"/>
                             <constraint firstItem="VJt-Lk-6jl" firstAttribute="leading" secondItem="hGf-Pu-ALU" secondAttribute="leading" constant="87" id="hAC-qk-pij"/>
@@ -52,20 +49,19 @@
                             <constraint firstItem="hGf-Pu-ALU" firstAttribute="bottom" secondItem="VJt-Lk-6jl" secondAttribute="bottom" constant="94" id="rdx-CG-EIf"/>
                             <constraint firstItem="VJt-Lk-6jl" firstAttribute="trailing" secondItem="KWw-oa-wB2" secondAttribute="trailing" id="tBB-cA-aKj"/>
                             <constraint firstItem="hGf-Pu-ALU" firstAttribute="trailing" secondItem="KWw-oa-wB2" secondAttribute="trailing" constant="87" id="vCi-tG-ASl"/>
-                            <constraint firstItem="KWw-oa-wB2" firstAttribute="top" secondItem="GJa-jx-9Wb" secondAttribute="bottom" constant="102" id="vFC-Zu-VwC"/>
                             <constraint firstAttribute="bottom" secondItem="KWw-oa-wB2" secondAttribute="bottom" constant="354" id="zhB-gb-UwU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="球場近くの飲食店を探す " id="Zsq-dk-RCt"/>
                     <connections>
-                        <outlet property="bellunaDomeButtonView" destination="VJt-Lk-6jl" id="o2F-SF-U4n"/>
+                        <outlet property="bellunaDomeButton" destination="VJt-Lk-6jl" id="idr-Ah-NqY"/>
                         <outlet property="tokyoDomeButtonView" destination="KWw-oa-wB2" id="hlw-tQ-mXt"/>
                         <outlet property="zozoButtonView" destination="GJa-jx-9Wb" id="duL-Pd-WWH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="771" y="88"/>
+            <point key="canvasLocation" x="778" y="66"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zoq-vQ-vJa">
