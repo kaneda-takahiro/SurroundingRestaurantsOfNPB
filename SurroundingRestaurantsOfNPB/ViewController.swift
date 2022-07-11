@@ -1,0 +1,19 @@
+//
+//  ViewController.swift
+//  SurroundingRestaurantsOfNPB
+//
+//  Created by 金田岳大 on 2022/07/07.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+
+
+}
+
