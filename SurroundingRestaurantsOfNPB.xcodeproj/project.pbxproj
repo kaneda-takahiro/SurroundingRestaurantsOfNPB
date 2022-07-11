@@ -9,12 +9,22 @@
 /* Begin PBXBuildFile section */
 		D20960822876B28B008AA77D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20960812876B28B008AA77D /* AppDelegate.swift */; };
 		D20960842876B28B008AA77D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20960832876B28B008AA77D /* SceneDelegate.swift */; };
-		D20960862876B28B008AA77D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20960852876B28B008AA77D /* ViewController.swift */; };
+		D20960862876B28B008AA77D /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20960852876B28B008AA77D /* MainScreenViewController.swift */; };
 		D20960892876B28B008AA77D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20960872876B28B008AA77D /* Main.storyboard */; };
 		D209608B2876B2A0008AA77D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D209608A2876B2A0008AA77D /* Assets.xcassets */; };
 		D209608E2876B2A0008AA77D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D209608C2876B2A0008AA77D /* LaunchScreen.storyboard */; };
 		D20960992876B2A1008AA77D /* SurroundingRestaurantsOfNPBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20960982876B2A1008AA77D /* SurroundingRestaurantsOfNPBTests.swift */; };
 		D20960A42876B2A1008AA77D /* SurroundingRestaurantsOfNPBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20960A32876B2A1008AA77D /* SurroundingRestaurantsOfNPBUITests.swift */; };
+		D20960B8287BD773008AA77D /* Zozo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20960B7287BD773008AA77D /* Zozo.storyboard */; };
+		D20960BA287BD792008AA77D /* TokyoDome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20960B9287BD792008AA77D /* TokyoDome.storyboard */; };
+		D20960BC287BD7D1008AA77D /* BellunaDome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20960BB287BD7D1008AA77D /* BellunaDome.storyboard */; };
+		D20960BF287BDCE1008AA77D /* ZozoButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20960BE287BDCE0008AA77D /* ZozoButtonView.swift */; };
+		D20960C1287BDD10008AA77D /* ZozoButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D20960C0287BDD10008AA77D /* ZozoButtonView.xib */; };
+		D20960C3287BDF69008AA77D /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20960C2287BDF69008AA77D /* NSObject+.swift */; };
+		D20960C5287BE23F008AA77D /* TokyoDomeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20960C4287BE23F008AA77D /* TokyoDomeButtonView.swift */; };
+		D20960C7287BE255008AA77D /* TokyoDomeButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D20960C6287BE255008AA77D /* TokyoDomeButtonView.xib */; };
+		D20960CB287BE85D008AA77D /* BellunaDomeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20960CA287BE85D008AA77D /* BellunaDomeButtonView.swift */; };
+		D20960CD287BE87C008AA77D /* BellunaDomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D20960CC287BE87C008AA77D /* BellunaDomeView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +48,7 @@
 		D209607E2876B28B008AA77D /* SurroundingRestaurantsOfNPB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurroundingRestaurantsOfNPB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20960812876B28B008AA77D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D20960832876B28B008AA77D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D20960852876B28B008AA77D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D20960852876B28B008AA77D /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		D20960882876B28B008AA77D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D209608A2876B2A0008AA77D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D209608D2876B2A0008AA77D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,16 @@
 		D209609F2876B2A1008AA77D /* SurroundingRestaurantsOfNPBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurroundingRestaurantsOfNPBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20960A32876B2A1008AA77D /* SurroundingRestaurantsOfNPBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurroundingRestaurantsOfNPBUITests.swift; sourceTree = "<group>"; };
 		D20960A52876B2A1008AA77D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D20960B7287BD773008AA77D /* Zozo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Zozo.storyboard; sourceTree = "<group>"; };
+		D20960B9287BD792008AA77D /* TokyoDome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TokyoDome.storyboard; sourceTree = "<group>"; };
+		D20960BB287BD7D1008AA77D /* BellunaDome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BellunaDome.storyboard; sourceTree = "<group>"; };
+		D20960BE287BDCE0008AA77D /* ZozoButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZozoButtonView.swift; sourceTree = "<group>"; };
+		D20960C0287BDD10008AA77D /* ZozoButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZozoButtonView.xib; sourceTree = "<group>"; };
+		D20960C2287BDF69008AA77D /* NSObject+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
+		D20960C4287BE23F008AA77D /* TokyoDomeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokyoDomeButtonView.swift; sourceTree = "<group>"; };
+		D20960C6287BE255008AA77D /* TokyoDomeButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TokyoDomeButtonView.xib; sourceTree = "<group>"; };
+		D20960CA287BE85D008AA77D /* BellunaDomeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellunaDomeButtonView.swift; sourceTree = "<group>"; };
+		D20960CC287BE87C008AA77D /* BellunaDomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BellunaDomeView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +119,25 @@
 		D20960802876B28B008AA77D /* SurroundingRestaurantsOfNPB */ = {
 			isa = PBXGroup;
 			children = (
+				D20960B4287BD65D008AA77D /* Model */,
+				D20960B3287BD652008AA77D /* View */,
+				D20960B2287BD641008AA77D /* Controller */,
+				D20960B1287BD623008AA77D /* Extentions */,
 				D20960812876B28B008AA77D /* AppDelegate.swift */,
 				D20960832876B28B008AA77D /* SceneDelegate.swift */,
-				D20960852876B28B008AA77D /* ViewController.swift */,
 				D20960872876B28B008AA77D /* Main.storyboard */,
+				D20960852876B28B008AA77D /* MainScreenViewController.swift */,
 				D209608A2876B2A0008AA77D /* Assets.xcassets */,
 				D209608C2876B2A0008AA77D /* LaunchScreen.storyboard */,
 				D209608F2876B2A0008AA77D /* Info.plist */,
+				D20960BD287BD7DD008AA77D /* Storyboard */,
+				D20960BE287BDCE0008AA77D /* ZozoButtonView.swift */,
+				D20960C0287BDD10008AA77D /* ZozoButtonView.xib */,
+				D20960C2287BDF69008AA77D /* NSObject+.swift */,
+				D20960C4287BE23F008AA77D /* TokyoDomeButtonView.swift */,
+				D20960C6287BE255008AA77D /* TokyoDomeButtonView.xib */,
+				D20960CA287BE85D008AA77D /* BellunaDomeButtonView.swift */,
+				D20960CC287BE87C008AA77D /* BellunaDomeView.xib */,
 			);
 			path = SurroundingRestaurantsOfNPB;
 			sourceTree = "<group>";
@@ -126,6 +158,44 @@
 				D20960A52876B2A1008AA77D /* Info.plist */,
 			);
 			path = SurroundingRestaurantsOfNPBUITests;
+			sourceTree = "<group>";
+		};
+		D20960B1287BD623008AA77D /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		D20960B2287BD641008AA77D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D20960B3287BD652008AA77D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D20960B4287BD65D008AA77D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D20960BD287BD7DD008AA77D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D20960B7287BD773008AA77D /* Zozo.storyboard */,
+				D20960B9287BD792008AA77D /* TokyoDome.storyboard */,
+				D20960BB287BD7D1008AA77D /* BellunaDome.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +301,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D20960B8287BD773008AA77D /* Zozo.storyboard in Resources */,
 				D209608E2876B2A0008AA77D /* LaunchScreen.storyboard in Resources */,
+				D20960C7287BE255008AA77D /* TokyoDomeButtonView.xib in Resources */,
+				D20960BA287BD792008AA77D /* TokyoDome.storyboard in Resources */,
 				D209608B2876B2A0008AA77D /* Assets.xcassets in Resources */,
+				D20960C1287BDD10008AA77D /* ZozoButtonView.xib in Resources */,
 				D20960892876B28B008AA77D /* Main.storyboard in Resources */,
+				D20960CD287BE87C008AA77D /* BellunaDomeView.xib in Resources */,
+				D20960BC287BD7D1008AA77D /* BellunaDome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +334,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D20960862876B28B008AA77D /* ViewController.swift in Sources */,
+				D20960C5287BE23F008AA77D /* TokyoDomeButtonView.swift in Sources */,
+				D20960C3287BDF69008AA77D /* NSObject+.swift in Sources */,
+				D20960BF287BDCE1008AA77D /* ZozoButtonView.swift in Sources */,
+				D20960862876B28B008AA77D /* MainScreenViewController.swift in Sources */,
 				D20960822876B28B008AA77D /* AppDelegate.swift in Sources */,
+				D20960CB287BE85D008AA77D /* BellunaDomeButtonView.swift in Sources */,
 				D20960842876B28B008AA77D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
