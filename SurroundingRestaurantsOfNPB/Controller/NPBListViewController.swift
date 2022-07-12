@@ -1,5 +1,5 @@
 //
-//  MainScreenViewController.swift
+//  MNPBListViewController.swift
 //  SurroundingRestaurantsOfNPB
 //
 //  Created by 金田岳大 on 2022/07/07.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class MainScreenViewController: UIViewController {
+final class NPBListViewController: UIViewController {
 
     @IBOutlet private weak var zozoButtonView: ZozoButtonView!
     

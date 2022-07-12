@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D20960822876B28B008AA77D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20960812876B28B008AA77D /* AppDelegate.swift */; };
 		D20960842876B28B008AA77D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20960832876B28B008AA77D /* SceneDelegate.swift */; };
-		D20960862876B28B008AA77D /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20960852876B28B008AA77D /* MainScreenViewController.swift */; };
+		D20960862876B28B008AA77D /* NPBListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20960852876B28B008AA77D /* NPBListViewController.swift */; };
 		D20960892876B28B008AA77D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20960872876B28B008AA77D /* Main.storyboard */; };
 		D209608B2876B2A0008AA77D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D209608A2876B2A0008AA77D /* Assets.xcassets */; };
 		D209608E2876B2A0008AA77D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D209608C2876B2A0008AA77D /* LaunchScreen.storyboard */; };
@@ -49,7 +49,7 @@
 		D209607E2876B28B008AA77D /* SurroundingRestaurantsOfNPB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurroundingRestaurantsOfNPB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20960812876B28B008AA77D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D20960832876B28B008AA77D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D20960852876B28B008AA77D /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		D20960852876B28B008AA77D /* NPBListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPBListViewController.swift; sourceTree = "<group>"; };
 		D20960882876B28B008AA77D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D209608A2876B2A0008AA77D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D209608D2876B2A0008AA77D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 		D20960B2287BD641008AA77D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D20960852876B28B008AA77D /* MainScreenViewController.swift */,
+				D20960852876B28B008AA77D /* NPBListViewController.swift */,
 				D20960D3287C0D45008AA77D /* ZozoButtonTapViewController.swift */,
 				D20960D5287C0D92008AA77D /* ZozoButtonTapViewController.storyboard */,
 			);
@@ -332,7 +332,7 @@
 				D20960C3287BDF69008AA77D /* NSObject+.swift in Sources */,
 				D20960D4287C0D45008AA77D /* ZozoButtonTapViewController.swift in Sources */,
 				D20960BF287BDCE1008AA77D /* ZozoButtonView.swift in Sources */,
-				D20960862876B28B008AA77D /* MainScreenViewController.swift in Sources */,
+				D20960862876B28B008AA77D /* NPBListViewController.swift in Sources */,
 				D20960D9287C1F8E008AA77D /* ZozoCollectionViewCell.swift in Sources */,
 				D20960822876B28B008AA77D /* AppDelegate.swift in Sources */,
 				D20960D0287C0411008AA77D /* BellunaDomeButtonView.swift in Sources */,

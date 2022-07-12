@@ -29,7 +29,6 @@ final class BellunaDomeButtonView: UIView {
     }
 
     private func setup() {
-       
     }
     
     @IBAction func didTapBellunaDomeButton(_ sender: UIButton) {
