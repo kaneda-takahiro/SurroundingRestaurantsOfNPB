@@ -38,21 +38,16 @@ extension NPBListViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        guard let stadiumNameList = stadiumNames[] else { return 0}
+
         return stadiumNamesList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: NPBListCell.className, for: indexPath) as? NPBListCell else{
             return UITableViewCell() }
-        
-//        if let stadiumNameList = stadiumN
-    
-        
+        cell.textLabel?.text = self.stadiumNamesList[indexPath.row]
         return cell
-//        cell.stadiumNameButton.
-        
-//            .= stadiumNamesList[indexPath.row]
+
     }
 }
 

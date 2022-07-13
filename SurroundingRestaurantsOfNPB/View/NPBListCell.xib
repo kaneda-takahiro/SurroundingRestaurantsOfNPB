@@ -18,7 +18,6 @@
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3H-05-OBR">
                         <rect key="frame" x="20" y="11" width="282" height="278"/>
-                        <state key="normal" title="球場名"/>
                         <connections>
                             <action selector="didTapStadiumNameButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0gb-mw-nIw"/>
                         </connections>
