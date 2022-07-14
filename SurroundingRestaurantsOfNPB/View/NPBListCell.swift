@@ -10,22 +10,15 @@ import UIKit
 final class NPBListCell: UITableViewCell {
     
     @IBOutlet private weak var stadiumNameLabel: UILabel!
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
-    func setupStadiumName (name: String) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+    }
+    
+    func setupStadiumName(name: String) {
         stadiumNameLabel.text = name
     }
 }
-
