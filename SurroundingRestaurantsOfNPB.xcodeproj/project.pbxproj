@@ -16,8 +16,6 @@
 		D20960992876B2A1008AA77D /* SurroundingRestaurantsOfNPBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20960982876B2A1008AA77D /* SurroundingRestaurantsOfNPBTests.swift */; };
 		D20960A42876B2A1008AA77D /* SurroundingRestaurantsOfNPBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20960A32876B2A1008AA77D /* SurroundingRestaurantsOfNPBUITests.swift */; };
 		D20960C3287BDF69008AA77D /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20960C2287BDF69008AA77D /* NSObject+.swift */; };
-		D20960D9287C1F8E008AA77D /* ZozoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20960D7287C1F8E008AA77D /* ZozoCollectionViewCell.swift */; };
-		D20960DA287C1F8E008AA77D /* ZozoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D20960D8287C1F8E008AA77D /* ZozoCollectionViewCell.xib */; };
 		D20960DD287D6973008AA77D /* NPBListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20960DB287D6973008AA77D /* NPBListCell.swift */; };
 		D20960DE287D6973008AA77D /* NPBListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D20960DC287D6973008AA77D /* NPBListCell.xib */; };
 /* End PBXBuildFile section */
@@ -55,8 +53,6 @@
 		D20960A32876B2A1008AA77D /* SurroundingRestaurantsOfNPBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurroundingRestaurantsOfNPBUITests.swift; sourceTree = "<group>"; };
 		D20960A52876B2A1008AA77D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D20960C2287BDF69008AA77D /* NSObject+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
-		D20960D7287C1F8E008AA77D /* ZozoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZozoCollectionViewCell.swift; sourceTree = "<group>"; };
-		D20960D8287C1F8E008AA77D /* ZozoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZozoCollectionViewCell.xib; sourceTree = "<group>"; };
 		D20960DB287D6973008AA77D /* NPBListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPBListCell.swift; sourceTree = "<group>"; };
 		D20960DC287D6973008AA77D /* NPBListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NPBListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,8 +114,6 @@
 				D209608A2876B2A0008AA77D /* Assets.xcassets */,
 				D209608C2876B2A0008AA77D /* LaunchScreen.storyboard */,
 				D209608F2876B2A0008AA77D /* Info.plist */,
-				D20960D7287C1F8E008AA77D /* ZozoCollectionViewCell.swift */,
-				D20960D8287C1F8E008AA77D /* ZozoCollectionViewCell.xib */,
 			);
 			path = SurroundingRestaurantsOfNPB;
 			sourceTree = "<group>";
@@ -280,7 +274,6 @@
 			files = (
 				D20960DE287D6973008AA77D /* NPBListCell.xib in Resources */,
 				D209608E2876B2A0008AA77D /* LaunchScreen.storyboard in Resources */,
-				D20960DA287C1F8E008AA77D /* ZozoCollectionViewCell.xib in Resources */,
 				D209608B2876B2A0008AA77D /* Assets.xcassets in Resources */,
 				D20960892876B28B008AA77D /* Main.storyboard in Resources */,
 			);
@@ -310,7 +303,6 @@
 				D20960C3287BDF69008AA77D /* NSObject+.swift in Sources */,
 				D20960862876B28B008AA77D /* NPBListViewController.swift in Sources */,
 				D20960DD287D6973008AA77D /* NPBListCell.swift in Sources */,
-				D20960D9287C1F8E008AA77D /* ZozoCollectionViewCell.swift in Sources */,
 				D20960822876B28B008AA77D /* AppDelegate.swift in Sources */,
 				D20960842876B28B008AA77D /* SceneDelegate.swift in Sources */,
 			);

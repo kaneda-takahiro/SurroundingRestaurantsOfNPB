@@ -7,10 +7,9 @@
 
 import UIKit
 
-class NPBListCell: UITableViewCell {
+final class NPBListCell: UITableViewCell {
     
-    
-    @IBOutlet weak var stadiumNameButton: UIButton!
+    @IBOutlet weak var stadiumNameLabel: UILabel!
     
     
     override func awakeFromNib() {
@@ -23,9 +22,6 @@ class NPBListCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-    }
-
-    @IBAction func didTapStadiumNameButton(_ sender: UIButton) {
     }
     
     
