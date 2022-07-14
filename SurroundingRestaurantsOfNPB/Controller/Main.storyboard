@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xbv-2f-EP7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--球場近くの飲食店を探す -->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="NPBListViewController" customModule="SurroundingRestaurantsOfNPB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tjz-GQ-IhK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7AJ-Kb-BL1">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hGf-Pu-ALU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hGf-Pu-ALU" firstAttribute="trailing" secondItem="7AJ-Kb-BL1" secondAttribute="trailing" id="7tR-xW-uQw"/>
+                            <constraint firstItem="hGf-Pu-ALU" firstAttribute="bottom" secondItem="7AJ-Kb-BL1" secondAttribute="bottom" id="FQ0-9x-fTY"/>
+                            <constraint firstItem="7AJ-Kb-BL1" firstAttribute="top" secondItem="hGf-Pu-ALU" secondAttribute="top" id="Ff3-1K-tvK"/>
+                            <constraint firstItem="7AJ-Kb-BL1" firstAttribute="leading" secondItem="hGf-Pu-ALU" secondAttribute="leading" id="Ykr-jH-blF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="球場近くの飲食店を探す " id="Zsq-dk-RCt"/>
+                    <connections>
+                        <outlet property="tableView" destination="7AJ-Kb-BL1" id="JiQ-YT-Q0O"/>
+                        <segue destination="jKw-ps-eeC" kind="show" id="NlK-JV-APw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="726" y="88"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kyx-ue-QTD">
+            <objects>
+                <viewController id="jKw-ps-eeC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PcE-9F-A7K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Ggf-Bc-vjH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hYU-tj-HdN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nk5-Ke-qYJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1339" y="88"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zoq-vQ-vJa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xbv-2f-EP7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FNj-HX-4j7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lhZ-y5-FY6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A0v-6b-Qlo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89.855072463768124" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
