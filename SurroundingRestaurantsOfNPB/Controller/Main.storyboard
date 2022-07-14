@@ -33,11 +33,28 @@
                     <navigationItem key="navigationItem" title="球場近くの飲食店を探す " id="Zsq-dk-RCt"/>
                     <connections>
                         <outlet property="tableView" destination="7AJ-Kb-BL1" id="JiQ-YT-Q0O"/>
+                        <segue destination="jKw-ps-eeC" kind="show" id="NlK-JV-APw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="903" y="100"/>
+            <point key="canvasLocation" x="726" y="88"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kyx-ue-QTD">
+            <objects>
+                <viewController id="jKw-ps-eeC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PcE-9F-A7K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Ggf-Bc-vjH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hYU-tj-HdN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nk5-Ke-qYJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1339" y="88"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zoq-vQ-vJa">

@@ -1,20 +1,16 @@
 //
-//  NPBListCell.swift
+//  restaurantInfoCell.swift
 //  SurroundingRestaurantsOfNPB
 //
-//  Created by 金田岳大 on 2022/07/12.
+//  Created by 金田岳大 on 2022/07/14.
 //
 
 import UIKit
 
-final class NPBListCell: UITableViewCell {
-    
-    @IBOutlet private weak var stadiumNameLabel: UILabel!
-    
-    
+class restaurantInfoCell: UITableViewCell {
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         // Initialization code
     }
 
@@ -24,8 +20,4 @@ final class NPBListCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setupStadiumName (name: String) {
-        stadiumNameLabel.text = name
-    }
 }
-
