@@ -21,7 +21,7 @@
 		D20960E2287FF9EF008AA77D /* RestaurantInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D20960E0287FF9EF008AA77D /* RestaurantInfoCell.xib */; };
 		D20960E4287FFD84008AA77D /* RestaurantInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20960E3287FFD84008AA77D /* RestaurantInfoViewController.swift */; };
 		D20960E6287FFF70008AA77D /* RestaurantInfoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20960E5287FFF70008AA77D /* RestaurantInfoViewController.storyboard */; };
-		D20960E82880000A008AA77D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20960E72880000A008AA77D /* Main.storyboard */; };
+		D20960EC28826C2F008AA77D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20960EB28826C2F008AA77D /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +62,8 @@
 		D20960E0287FF9EF008AA77D /* RestaurantInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantInfoCell.xib; sourceTree = "<group>"; };
 		D20960E3287FFD84008AA77D /* RestaurantInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfoViewController.swift; sourceTree = "<group>"; };
 		D20960E5287FFF70008AA77D /* RestaurantInfoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RestaurantInfoViewController.storyboard; sourceTree = "<group>"; };
-		D20960E72880000A008AA77D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
-		D20960E92880001D008AA77D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D20960EA2882394F008AA77D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
+		D20960EB28826C2F008AA77D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,8 @@
 		D20960B2287BD641008AA77D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D20960E92880001D008AA77D /* Main.storyboard */,
+				D20960EA2882394F008AA77D /* Main.storyboard */,
+				D20960EB28826C2F008AA77D /* Main.storyboard */,
 				D20960852876B28B008AA77D /* NPBListViewController.swift */,
 				D20960E5287FFF70008AA77D /* RestaurantInfoViewController.storyboard */,
 				D20960E3287FFD84008AA77D /* RestaurantInfoViewController.swift */,
@@ -169,7 +170,6 @@
 			children = (
 				D20960DB287D6973008AA77D /* NPBListCell.swift */,
 				D20960DC287D6973008AA77D /* NPBListCell.xib */,
-				D20960E72880000A008AA77D /* Main.storyboard */,
 				D20960DF287FF9EF008AA77D /* RestaurantInfoCell.swift */,
 				D20960E0287FF9EF008AA77D /* RestaurantInfoCell.xib */,
 			);
@@ -289,7 +289,7 @@
 				D20960DE287D6973008AA77D /* NPBListCell.xib in Resources */,
 				D209608E2876B2A0008AA77D /* LaunchScreen.storyboard in Resources */,
 				D20960E6287FFF70008AA77D /* RestaurantInfoViewController.storyboard in Resources */,
-				D20960E82880000A008AA77D /* Main.storyboard in Resources */,
+				D20960EC28826C2F008AA77D /* Main.storyboard in Resources */,
 				D209608B2876B2A0008AA77D /* Assets.xcassets in Resources */,
 				D20960E2287FF9EF008AA77D /* RestaurantInfoCell.xib in Resources */,
 			);

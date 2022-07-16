@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class NPBListViewController: UIViewController {
+final class NPBListViewController: UIViewController,UITableViewDelegate {
     // 12球団の球場入れる場合はここで球場名を増やす
     private let stadiumNamesList = ["ZOZOマリンスタジアム", "東京ドーム", "ベルーナドーム"]
     @IBOutlet private weak var tableView: UITableView! {
@@ -20,8 +20,10 @@ final class NPBListViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.separatorColor = .black
     }
 }
+
 extension NPBListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         stadiumNamesList.count
@@ -32,9 +34,17 @@ extension NPBListViewController: UITableViewDataSource {
         cell.setupStadiumName(name: stadiumNamesList[indexPath.row])
         return cell
     }
-}
-extension NPBListViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "CellTap", sender: nil)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+   
+    }
+        
+extension NPBListViewController {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         250
     }
+
 }

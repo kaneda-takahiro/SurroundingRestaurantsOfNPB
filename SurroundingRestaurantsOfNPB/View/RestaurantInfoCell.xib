@@ -10,21 +10,57 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="restaurantInfoCell" id="KGk-i7-Jjw" customClass="RestaurantInfoCell" customModule="SurroundingRestaurantsOfNPB" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RestaurantInfoCell" rowHeight="100" id="KGk-i7-Jjw" userLabel="RestaurantInfoCell" customClass="RestaurantInfoCell" customModule="SurroundingRestaurantsOfNPB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="314" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <rect key="frame" x="0.0" y="0.0" width="314" height="100"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="miv-Pd-hzL">
+                        <rect key="frame" x="0.0" y="0.0" width="314" height="100"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3rN-4T-7tX">
+                                <rect key="frame" x="0.0" y="0.0" width="108.5" height="97.5"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="msj-o5-Ebs">
+                                <rect key="frame" x="108.5" y="0.0" width="205.5" height="53.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="飲食店名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sca-Y1-RLA">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="27.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="お店ジャンル名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v70-Kh-HzI">
+                                        <rect key="frame" x="0.0" y="35.5" width="107.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="miv-Pd-hzL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CoH-qG-7nF"/>
+                    <constraint firstAttribute="trailing" secondItem="miv-Pd-hzL" secondAttribute="trailing" id="N2a-4W-vPi"/>
+                    <constraint firstItem="miv-Pd-hzL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="XH9-ZR-XR8"/>
+                    <constraint firstAttribute="bottom" secondItem="miv-Pd-hzL" secondAttribute="bottom" id="XvA-2W-oZs"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <color key="backgroundColor" systemColor="linkColor"/>
-            <point key="canvasLocation" x="91" y="104"/>
+            <color key="backgroundColor" systemColor="systemGray2Color"/>
+            <connections>
+                <outlet property="restaurantPhoto" destination="3rN-4T-7tX" id="o1J-uV-UKu"/>
+            </connections>
+            <point key="canvasLocation" x="100.00000000000001" y="-42.857142857142854"/>
         </tableViewCell>
     </objects>
     <resources>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
