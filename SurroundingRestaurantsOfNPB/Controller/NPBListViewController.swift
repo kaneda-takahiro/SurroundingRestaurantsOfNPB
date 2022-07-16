@@ -39,12 +39,12 @@ extension NPBListViewController: UITableViewDataSource {
         self.performSegue(withIdentifier: "CellTap", sender: nil)
         tableView.deselectRow(at: indexPath, animated: true)
     }
-   
-    }
-        
+    
+}
+
 extension NPBListViewController {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         250
     }
-
+    
 }
