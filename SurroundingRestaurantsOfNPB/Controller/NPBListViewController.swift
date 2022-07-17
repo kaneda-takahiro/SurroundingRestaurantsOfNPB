@@ -39,7 +39,6 @@ extension NPBListViewController: UITableViewDataSource {
         self.performSegue(withIdentifier: "CellTap", sender: nil)
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
 }
 
 extension NPBListViewController {
