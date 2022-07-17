@@ -9,8 +9,6 @@ import UIKit
 
 final class RestaurantInfoCell: UITableViewCell {
     
-    @IBOutlet weak var restaurantPhoto: UIImageView!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -19,4 +17,5 @@ final class RestaurantInfoCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
 }
+
 

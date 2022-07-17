@@ -32,7 +32,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="d9g-qQ-6Wq"/>
                     <connections>
-                        <outlet property="restaurantTableView" destination="zNS-AK-6Ez" id="uqu-fF-lxn"/>
+                        <outlet property="restaurantTableView" destination="zNS-AK-6Ez" id="dSo-Ub-VXJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

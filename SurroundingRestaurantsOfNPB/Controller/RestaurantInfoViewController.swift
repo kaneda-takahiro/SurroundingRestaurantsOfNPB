@@ -7,34 +7,25 @@
 
 import UIKit
 
-final class RestaurantInfoViewController: UITableViewController {
-    
+final class RestaurantInfoViewController: UIViewController {
     
     @IBOutlet private weak var restaurantTableView: UITableView!
-    
+    func didSet() {
+        let nib = UINib(nibName: RestaurantInfoCell.className, bundle: nil)
+        restaurantTableView.register(nib, forCellReuseIdentifier: RestaurantInfoCell.className)
+        restaurantTableView.dataSource = self
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        setuprestaurantTableView()
     }
-    private func setuprestaurantTableView() {
-        let nib = UINib(nibName: RestaurantInfoCell.className, bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: RestaurantInfoCell.className)
-        tableView.register(nib, forCellReuseIdentifier: RestaurantInfoCell.className)
-        restaurantTableView.dataSource = self
-        restaurantTableView.delegate = self
+}
+extension RestaurantInfoViewController: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        15
     }
     
-}
-extension RestaurantInfoViewController{
-    final func restaurantTableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        15
-        //15は仮置き
-    }
-}
-
-extension RestaurantInfoViewController{
-    final func restaurantTableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: RestaurantInfoCell.className, for: indexPath)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = restaurantTableView.dequeueReusableCell(withIdentifier: RestaurantInfoCell.className, for: indexPath)
         return cell
     }
 }
