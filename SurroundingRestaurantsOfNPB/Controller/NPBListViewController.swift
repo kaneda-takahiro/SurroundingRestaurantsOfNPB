@@ -16,8 +16,10 @@ final class NPBListViewController: UIViewController {
             tableView.register(nib, forCellReuseIdentifier: NPBListCell.className)
             tableView.dataSource = self
             tableView.delegate = self
-        }
+        }        
+        
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.separatorColor = .black
@@ -38,10 +40,15 @@ extension NPBListViewController: UITableViewDataSource {
 
 extension NPBListViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "CellTap", sender: nil)
+        let storyboard = UIStoryboard(name: "RestaurantInfoViewController", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(identifier: "RestaurantInfoViewController") as? RestaurantInfoViewController else{
+            return }
+        navigationController?.pushViewController(vc, animated: true)
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         250
     }
 }
+
 

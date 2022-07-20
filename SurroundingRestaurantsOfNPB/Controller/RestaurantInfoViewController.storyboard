@@ -22,7 +22,6 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="zNS-AK-6Ez" secondAttribute="bottom" id="41p-C7-x48"/>
                             <constraint firstItem="zNS-AK-6Ez" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="lZw-Jq-f8C"/>
@@ -37,7 +36,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1157.9710144927537" y="95.758928571428569"/>
+            <point key="canvasLocation" x="-5306" y="54"/>
         </scene>
     </scenes>
     <resources>

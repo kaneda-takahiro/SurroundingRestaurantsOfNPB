@@ -32,41 +32,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="球場近くの飲食店を探す " id="Zsq-dk-RCt"/>
                     <connections>
-                        <outlet property="tableView" destination="7AJ-Kb-BL1" id="JiQ-YT-Q0O"/>
-                        <segue destination="INc-J3-FKf" kind="show" identifier="CellTap" id="hRO-3V-abB"/>
+                        <outlet property="tableView" destination="7AJ-Kb-BL1" id="WsY-RH-ycu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="726" y="88"/>
-        </scene>
-        <!--Restaurant Info View Controller-->
-        <scene sceneID="hic-Ba-uHr">
-            <objects>
-                <viewController id="INc-J3-FKf" customClass="RestaurantInfoViewController" customModule="SurroundingRestaurantsOfNPB" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vrN-ww-MQ8" customClass="RestaurantInfoCell" customModule="SurroundingRestaurantsOfNPB" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MAM-NY-xvL">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="wPI-oy-VKI"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="MAM-NY-xvL" firstAttribute="leading" secondItem="wPI-oy-VKI" secondAttribute="leading" id="69y-IT-uM2"/>
-                            <constraint firstItem="MAM-NY-xvL" firstAttribute="top" secondItem="wPI-oy-VKI" secondAttribute="top" id="SCO-wo-c4t"/>
-                            <constraint firstItem="wPI-oy-VKI" firstAttribute="trailing" secondItem="MAM-NY-xvL" secondAttribute="trailing" id="yki-rd-tXt"/>
-                            <constraint firstItem="wPI-oy-VKI" firstAttribute="bottom" secondItem="MAM-NY-xvL" secondAttribute="bottom" id="zuP-OQ-Q5G"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="g0O-Oq-wT9"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="p7K-84-g9V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1482" y="105"/>
+            <point key="canvasLocation" x="819" y="102"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zoq-vQ-vJa">

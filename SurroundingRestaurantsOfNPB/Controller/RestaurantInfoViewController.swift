@@ -9,6 +9,9 @@ import UIKit
 
 final class RestaurantInfoViewController: UIViewController {
     
+    var RestaurantName: String? = nil
+    
+    
     @IBOutlet private weak var restaurantTableView: UITableView!
     func didSet() {
         let nib = UINib(nibName: RestaurantInfoCell.className, bundle: nil)
