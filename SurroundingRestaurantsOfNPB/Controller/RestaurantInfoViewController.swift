@@ -9,17 +9,18 @@ import UIKit
 
 final class RestaurantInfoViewController: UIViewController {
     
-    var RestaurantName: String? = nil
-    
-    
-    @IBOutlet private weak var restaurantTableView: UITableView!
-    func didSet() {
+    @IBOutlet private weak var restaurantTableView: UITableView!{
+     didSet {
         let nib = UINib(nibName: RestaurantInfoCell.className, bundle: nil)
-        restaurantTableView.register(nib, forCellReuseIdentifier: RestaurantInfoCell.className)
+        restaurantTableView.register(nib, forCellReuseIdentifier: "RestaurantInfoCell")
+        print("✊")
         restaurantTableView.dataSource = self
+     }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 }
 extension RestaurantInfoViewController: UITableViewDataSource{
@@ -28,7 +29,7 @@ extension RestaurantInfoViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = restaurantTableView.dequeueReusableCell(withIdentifier: RestaurantInfoCell.className, for: indexPath) as? RestaurantInfoCell else {return RestaurantInfoCell()
+        guard let cell = restaurantTableView.dequeueReusableCell(withIdentifier: RestaurantInfoCell.className, for: indexPath) as? RestaurantInfoCell else { return UITableViewCell()
         }
         return cell
     }

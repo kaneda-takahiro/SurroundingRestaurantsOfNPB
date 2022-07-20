@@ -16,8 +16,7 @@ final class NPBListViewController: UIViewController {
             tableView.register(nib, forCellReuseIdentifier: NPBListCell.className)
             tableView.dataSource = self
             tableView.delegate = self
-        }        
-        
+        }
     }
     
     override func viewDidLoad() {
