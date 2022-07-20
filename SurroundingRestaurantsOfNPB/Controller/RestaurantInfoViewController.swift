@@ -12,7 +12,7 @@ final class RestaurantInfoViewController: UIViewController {
     @IBOutlet private weak var restaurantTableView: UITableView!{
         didSet {
             let nib = UINib(nibName: RestaurantInfoCell.className, bundle: nil)
-            restaurantTableView.register(nib, forCellReuseIdentifier: "RestaurantInfoCell")
+            restaurantTableView.register(nib, forCellReuseIdentifier: RestaurantInfoCell.className)
             restaurantTableView.dataSource = self
         }
     }
@@ -22,7 +22,7 @@ final class RestaurantInfoViewController: UIViewController {
     }
 }
 
-extension RestaurantInfoViewController: UITableViewDataSource{
+extension RestaurantInfoViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         15
     }

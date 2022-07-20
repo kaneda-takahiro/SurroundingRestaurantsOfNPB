@@ -17,5 +17,3 @@ final class RestaurantInfoCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
 }
-
-

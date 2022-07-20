@@ -16,12 +16,12 @@ final class NPBListViewController: UIViewController {
             tableView.register(nib, forCellReuseIdentifier: NPBListCell.className)
             tableView.dataSource = self
             tableView.delegate = self
+            tableView.separatorColor = .black
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.separatorColor = .black
     }
 }
 
@@ -35,19 +35,21 @@ extension NPBListViewController: UITableViewDataSource {
         cell.setupStadiumName(name: stadiumNamesList[indexPath.row])
         return cell
     }
+    
+    func transion(viewControllerName: String){
+        let storyboard = UIStoryboard(name: viewControllerName, bundle: nil)
+        guard let vc = storyboard.instantiateViewController(identifier: viewControllerName) as? RestaurantInfoViewController else{
+            return }
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension NPBListViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard(name: "RestaurantInfoViewController", bundle: nil)
-        guard let vc = storyboard.instantiateViewController(identifier: "RestaurantInfoViewController") as? RestaurantInfoViewController else{
-            return }
-        navigationController?.pushViewController(vc, animated: true)
+        self.transion(viewControllerName: "RestaurantInfoViewController")
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         250
     }
 }
-
-
