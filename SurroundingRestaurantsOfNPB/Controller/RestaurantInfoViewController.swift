@@ -9,7 +9,7 @@ import UIKit
 
 final class RestaurantInfoViewController: UIViewController {
     
-    @IBOutlet private weak var restaurantTableView: UITableView!{
+    @IBOutlet private weak var restaurantTableView: UITableView! {
         didSet {
             let nib = UINib(nibName: RestaurantInfoCell.className, bundle: nil)
             restaurantTableView.register(nib, forCellReuseIdentifier: RestaurantInfoCell.className)
