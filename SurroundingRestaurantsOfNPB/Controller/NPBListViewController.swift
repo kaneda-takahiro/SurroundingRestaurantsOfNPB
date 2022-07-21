@@ -35,18 +35,11 @@ extension NPBListViewController: UITableViewDataSource {
         cell.setupStadiumName(name: stadiumNamesList[indexPath.row])
         return cell
     }
-    
-    func transion(viewControllerName: String){
-        let storyboard = UIStoryboard(name: viewControllerName, bundle: nil)
-        guard let vc = storyboard.instantiateViewController(identifier: viewControllerName) as? RestaurantInfoViewController else{
-            return }
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
 }
 
-extension NPBListViewController: UITableViewDelegate{
+extension NPBListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.transion(viewControllerName: "RestaurantInfoViewController")
+        transion(to: RestaurantInfoViewController.className)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
