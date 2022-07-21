@@ -8,12 +8,11 @@
 import UIKit
 
 extension UIViewController {
-    /// NPBListCellタップでRestaurantInfoViewControllerに遷移
+    /// 引数使用 + extension UIViewControllerに書くことで、他のクラスでも使いまわせるようにしました
     /// - Parameter viewControllerName: RestaurantInfoViewContoller
     func transion(to viewControllerName: String) {
         let storyboard = UIStoryboard(name: viewControllerName, bundle: nil)
-        guard let vc = storyboard.instantiateViewController(identifier: viewControllerName) as? RestaurantInfoViewController else {
-            return }
+        let vc = storyboard.instantiateViewController(identifier: viewControllerName)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
