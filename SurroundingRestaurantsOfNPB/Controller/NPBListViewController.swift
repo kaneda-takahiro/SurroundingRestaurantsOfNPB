@@ -16,12 +16,15 @@ final class NPBListViewController: UIViewController {
             tableView.register(nib, forCellReuseIdentifier: NPBListCell.className)
             tableView.dataSource = self
             tableView.delegate = self
+            tableView.separatorColor = .black
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
+
 extension NPBListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         stadiumNamesList.count
@@ -33,7 +36,12 @@ extension NPBListViewController: UITableViewDataSource {
         return cell
     }
 }
+
 extension NPBListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        transion(to: RestaurantInfoViewController.className)
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         250
     }

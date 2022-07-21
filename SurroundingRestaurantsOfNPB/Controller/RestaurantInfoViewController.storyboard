@@ -8,20 +8,35 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Restaurant Info View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="RestaurantInfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RestaurantInfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="RestaurantInfoViewController" customModule="SurroundingRestaurantsOfNPB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zNS-AK-6Ez">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="zNS-AK-6Ez" secondAttribute="bottom" id="41p-C7-x48"/>
+                            <constraint firstItem="zNS-AK-6Ez" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="lZw-Jq-f8C"/>
+                            <constraint firstItem="zNS-AK-6Ez" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="lae-db-Yrt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zNS-AK-6Ez" secondAttribute="trailing" id="xdd-2z-CSy"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="d9g-qQ-6Wq"/>
+                    <connections>
+                        <outlet property="restaurantTableView" destination="zNS-AK-6Ez" id="dSo-Ub-VXJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="91" y="89"/>
+            <point key="canvasLocation" x="-5306" y="54"/>
         </scene>
     </scenes>
     <resources>

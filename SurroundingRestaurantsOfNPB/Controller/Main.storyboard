@@ -27,34 +27,17 @@
                             <constraint firstItem="hGf-Pu-ALU" firstAttribute="trailing" secondItem="7AJ-Kb-BL1" secondAttribute="trailing" id="7tR-xW-uQw"/>
                             <constraint firstItem="hGf-Pu-ALU" firstAttribute="bottom" secondItem="7AJ-Kb-BL1" secondAttribute="bottom" id="FQ0-9x-fTY"/>
                             <constraint firstItem="7AJ-Kb-BL1" firstAttribute="top" secondItem="hGf-Pu-ALU" secondAttribute="top" id="Ff3-1K-tvK"/>
-                            <constraint firstItem="7AJ-Kb-BL1" firstAttribute="leading" secondItem="hGf-Pu-ALU" secondAttribute="leading" id="Ykr-jH-blF"/>
+                            <constraint firstItem="7AJ-Kb-BL1" firstAttribute="centerX" secondItem="tjz-GQ-IhK" secondAttribute="centerX" id="scS-CB-cmq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="球場近くの飲食店を探す " id="Zsq-dk-RCt"/>
                     <connections>
-                        <outlet property="tableView" destination="7AJ-Kb-BL1" id="JiQ-YT-Q0O"/>
-                        <segue destination="jKw-ps-eeC" kind="show" id="NlK-JV-APw"/>
+                        <outlet property="tableView" destination="7AJ-Kb-BL1" id="WsY-RH-ycu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="726" y="88"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="kyx-ue-QTD">
-            <objects>
-                <viewController id="jKw-ps-eeC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="PcE-9F-A7K">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Ggf-Bc-vjH"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="hYU-tj-HdN"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nk5-Ke-qYJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1339" y="88"/>
+            <point key="canvasLocation" x="819" y="102"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zoq-vQ-vJa">
