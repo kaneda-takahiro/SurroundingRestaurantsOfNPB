@@ -8,8 +8,8 @@
 import UIKit
 
 extension UIViewController {
-    ///プッシュ遷移をする実装
-    /// - Parameter viewControllerName: RestaurantInfoViewContoller
+    ///　プッシュ遷移をする実装
+    ///　- Parameter viewControllerName: RestaurantInfoViewContoller
     func transion(to viewControllerName: String) {
         let storyboard = UIStoryboard(name: viewControllerName, bundle: nil)
         let vc = storyboard.instantiateViewController(identifier: viewControllerName)
