@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIViewController {
-    /// 引数使用 + extension UIViewControllerに書くことで、他のクラスでも使いまわせるようにしました
+    ///プッシュ遷移をする実装
     /// - Parameter viewControllerName: RestaurantInfoViewContoller
     func transion(to viewControllerName: String) {
         let storyboard = UIStoryboard(name: viewControllerName, bundle: nil)
