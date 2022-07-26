@@ -14,6 +14,8 @@ final class RestaurantInfoViewController: UIViewController {
             let nib = UINib(nibName: RestaurantInfoCell.className, bundle: nil)
             restaurantTableView.register(nib, forCellReuseIdentifier: RestaurantInfoCell.className)
             restaurantTableView.dataSource = self
+            restaurantTableView.delegate = self
+            restaurantTableView.separatorColor = .black
         }
     }
     
@@ -24,6 +26,7 @@ final class RestaurantInfoViewController: UIViewController {
 
 extension RestaurantInfoViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //　仮置きで修正予定
         15
     }
     
@@ -35,8 +38,6 @@ extension RestaurantInfoViewController: UITableViewDataSource {
 
 extension RestaurantInfoViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        50
+        120
     }
 }
-
-
