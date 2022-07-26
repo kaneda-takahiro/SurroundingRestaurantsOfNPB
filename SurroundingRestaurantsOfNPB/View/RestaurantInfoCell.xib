@@ -60,9 +60,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="restaurantNameLabel" destination="j8H-cv-cjp" id="QE6-hU-5TG"/>
-                <outlet property="restaurantPhoto" destination="zl5-dk-l2m" id="lmt-nI-Vct"/>
-                <outlet property="reutaurantGenreLabel" destination="Kx5-0b-W8P" id="yNT-Zy-ndT"/>
+                <outlet property="genreLabel" destination="Kx5-0b-W8P" id="2Mi-RM-214"/>
+                <outlet property="nameLabel" destination="j8H-cv-cjp" id="jwC-eZ-y99"/>
+                <outlet property="thumbnailImageView" destination="zl5-dk-l2m" id="Lqu-19-rsU"/>
             </connections>
             <point key="canvasLocation" x="50.724637681159422" y="-177.45535714285714"/>
         </tableViewCell>
