@@ -17,26 +17,27 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bzk-lD-KHs">
-                        <rect key="frame" x="0.0" y="0.0" width="322" height="116"/>
+                        <rect key="frame" x="0.0" y="3" width="322" height="114"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zl5-dk-l2m">
-                                <rect key="frame" x="0.0" y="3" width="110" height="110"/>
+                                <rect key="frame" x="0.0" y="2" width="110" height="110"/>
+                                <color key="backgroundColor" red="1" green="0.66288734250000003" blue="0.2793231048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="Glr-Ea-c9H"/>
                                     <constraint firstAttribute="width" secondItem="zl5-dk-l2m" secondAttribute="height" multiplier="1:1" id="e3g-Nv-fL7"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hsf-7r-VFx">
-                                <rect key="frame" x="118" y="15" width="204" height="86"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="hsf-7r-VFx">
+                                <rect key="frame" x="118" y="24" width="204" height="66"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="レストラン店舗名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8H-cv-cjp">
-                                        <rect key="frame" x="0.0" y="-12" width="186.5" height="47.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="186.5" height="27.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ジャンル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kx5-0b-W8P">
-                                        <rect key="frame" x="0.0" y="50.5" width="73.5" height="47.5"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="73.5" height="21.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -47,33 +48,23 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="zl5-dk-l2m" firstAttribute="leading" secondItem="bzk-lD-KHs" secondAttribute="leading" id="Lhv-Av-IIz"/>
-                            <constraint firstItem="zl5-dk-l2m" firstAttribute="centerY" secondItem="bzk-lD-KHs" secondAttribute="centerY" id="Mu8-vd-wVj"/>
-                            <constraint firstItem="zl5-dk-l2m" firstAttribute="top" secondItem="bzk-lD-KHs" secondAttribute="top" constant="3" id="bcS-sT-mB3"/>
-                            <constraint firstItem="hsf-7r-VFx" firstAttribute="top" secondItem="bzk-lD-KHs" secondAttribute="top" constant="15" id="bzy-Zh-l9b"/>
-                            <constraint firstItem="zl5-dk-l2m" firstAttribute="leading" secondItem="bzk-lD-KHs" secondAttribute="leading" id="esn-vD-aEo"/>
-                            <constraint firstAttribute="bottom" secondItem="hsf-7r-VFx" secondAttribute="bottom" constant="15" id="gc8-dt-wop"/>
-                            <constraint firstItem="j8H-cv-cjp" firstAttribute="top" secondItem="zl5-dk-l2m" secondAttribute="top" id="lwu-TX-DK2"/>
-                            <constraint firstItem="Kx5-0b-W8P" firstAttribute="bottom" secondItem="zl5-dk-l2m" secondAttribute="bottom" id="orW-Ui-3yt"/>
-                        </constraints>
                     </stackView>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="bzk-lD-KHs" secondAttribute="trailing" id="Rwp-B6-PKL"/>
                     <constraint firstItem="bzk-lD-KHs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="aBD-7S-T7A"/>
-                    <constraint firstAttribute="bottom" secondItem="bzk-lD-KHs" secondAttribute="bottom" id="e9A-Qr-izY"/>
-                    <constraint firstItem="bzk-lD-KHs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="oCV-nf-TTq"/>
+                    <constraint firstAttribute="bottom" secondItem="bzk-lD-KHs" secondAttribute="bottom" constant="3" id="e9A-Qr-izY"/>
+                    <constraint firstItem="bzk-lD-KHs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="oCV-nf-TTq"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="restaurantName" destination="j8H-cv-cjp" id="Bnv-w8-ese"/>
+                <outlet property="restaurantNameLabel" destination="j8H-cv-cjp" id="QE6-hU-5TG"/>
                 <outlet property="restaurantPhoto" destination="zl5-dk-l2m" id="lmt-nI-Vct"/>
-                <outlet property="restaurantType" destination="Kx5-0b-W8P" id="nKD-tO-5R3"/>
+                <outlet property="reutaurantGenreLabel" destination="Kx5-0b-W8P" id="yNT-Zy-ndT"/>
             </connections>
-            <point key="canvasLocation" x="218.84057971014494" y="10.714285714285714"/>
+            <point key="canvasLocation" x="50.724637681159422" y="-177.45535714285714"/>
         </tableViewCell>
     </objects>
 </document>

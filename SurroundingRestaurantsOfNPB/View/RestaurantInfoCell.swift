@@ -11,9 +11,9 @@ final class RestaurantInfoCell: UITableViewCell {
     
     @IBOutlet private weak var restaurantPhoto: UIImageView!
     
-    @IBOutlet private weak var restaurantName: UILabel!
-       
-    @IBOutlet private weak var restaurantType: UILabel!
+    @IBOutlet private weak var restaurantNameLabel: UILabel!
+    
+    @IBOutlet private weak var reutaurantGenreLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
