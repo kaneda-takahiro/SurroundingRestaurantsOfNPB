@@ -14,6 +14,7 @@ final class RestaurantInfoViewController: UIViewController {
             let nib = UINib(nibName: RestaurantInfoCell.className, bundle: nil)
             restaurantTableView.register(nib, forCellReuseIdentifier: RestaurantInfoCell.className)
             restaurantTableView.dataSource = self
+            restaurantTableView.separatorColor = .black
         }
     }
     
@@ -24,6 +25,7 @@ final class RestaurantInfoViewController: UIViewController {
 
 extension RestaurantInfoViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // TODO: 仮置き。API連携で取得した球場周辺のレストラン数に修正予定
         15
     }
     
