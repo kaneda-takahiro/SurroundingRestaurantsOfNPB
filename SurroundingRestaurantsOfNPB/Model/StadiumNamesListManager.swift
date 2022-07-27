@@ -23,3 +23,4 @@ final class StadiumNamesListManager {
         return cell
     }
 }
+// modelにリストの情報書いたけど、vcはどう書いて良いかわからず足踏み中
