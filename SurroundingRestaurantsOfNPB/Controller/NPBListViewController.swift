@@ -8,18 +8,33 @@
 import UIKit
 
 final class NPBListViewController: UIViewController {
-
+   
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
             let nib = UINib(nibName: NPBListCell.className, bundle: nil)
             tableView.register(nib, forCellReuseIdentifier: NPBListCell.className)
+            tableView.dataSource = self
             tableView.delegate = self
             tableView.separatorColor = .black
         }
     }
     
+    let test = StadiumNamesListManager()
+        
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+}
+
+extension NPBListViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        test.stadiumNamesList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: NPBListCell.className, for: indexPath) as? NPBListCell else { return UITableViewCell() }
+        cell.setupStadiumName(name: test.stadiumNamesList[indexPath.row])
+        return cell
     }
 }
 
