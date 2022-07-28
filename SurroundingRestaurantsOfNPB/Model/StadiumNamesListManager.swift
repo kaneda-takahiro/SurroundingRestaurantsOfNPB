@@ -9,5 +9,4 @@ import Foundation
 
 final class StadiumNamesListManager {
      let stadiumNamesList = ["ZOZOマリンスタジアム", "東京ドーム", "ベルーナドーム"]
-
 }

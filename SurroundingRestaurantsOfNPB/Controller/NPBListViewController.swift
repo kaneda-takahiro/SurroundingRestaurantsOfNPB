@@ -8,7 +8,7 @@
 import UIKit
 
 final class NPBListViewController: UIViewController {
-   
+    
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
             let nib = UINib(nibName: NPBListCell.className, bundle: nil)
@@ -20,7 +20,7 @@ final class NPBListViewController: UIViewController {
     }
     
     let test = StadiumNamesListManager()
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -47,4 +47,3 @@ extension NPBListViewController: UITableViewDelegate {
         250
     }
 }
-
