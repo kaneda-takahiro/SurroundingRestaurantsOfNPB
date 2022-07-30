@@ -8,8 +8,12 @@
 import Foundation
 
 final class StadiumNamesListManager {
-   private let list = ["ZOZOマリンスタジアム", "東京ドーム", "ベルーナドーム"]
-   static let shared = StadiumNamesListManager()
+    private init (){}
+    
+    private let list = ["ZOZOマリンスタジアム", "東京ドーム", "ベルーナドーム"]
+    
+    static let shared = StadiumNamesListManager()
+    
     func listCountNumber() -> Int {
         list.count
     }

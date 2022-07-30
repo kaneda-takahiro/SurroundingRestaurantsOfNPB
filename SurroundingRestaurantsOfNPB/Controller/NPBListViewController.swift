@@ -19,8 +19,6 @@ final class NPBListViewController: UIViewController {
         }
     }
     
-    private let stadiumNamesListManager = StadiumNamesListManager()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -28,13 +26,13 @@ final class NPBListViewController: UIViewController {
 
 extension NPBListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        stadiumNamesListManager.listCountNumber()
+        StadiumNamesListManager.shared.listCountNumber()
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: NPBListCell.className, for: indexPath) as? NPBListCell else { return UITableViewCell() }
-        cell.setupStadiumName(name: stadiumNamesListManager.listName()[indexPath.row])
+        cell.setupStadiumName(name: StadiumNamesListManager.shared.listName()[indexPath.row])
         return cell
     }
 }
