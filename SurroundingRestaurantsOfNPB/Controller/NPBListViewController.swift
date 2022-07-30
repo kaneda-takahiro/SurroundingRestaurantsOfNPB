@@ -26,13 +26,12 @@ final class NPBListViewController: UIViewController {
 
 extension NPBListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        StadiumNamesListManager.shared.listCountNumber()
+        StadiumNamesListManager.shared.getList()
     }
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: NPBListCell.className, for: indexPath) as? NPBListCell else { return UITableViewCell() }
-        cell.setupStadiumName(name: StadiumNamesListManager.shared.listName()[indexPath.row])
+        cell.setupStadiumName(name: StadiumNamesListManager.shared.getList()[indexPath.row])
         return cell
     }
 }
