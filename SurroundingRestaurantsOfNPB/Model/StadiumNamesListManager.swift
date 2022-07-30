@@ -12,10 +12,7 @@ final class StadiumNamesListManager {
     static let shared = StadiumNamesListManager()
     private init() {}
     
-//    func getList() -> Int {
-//        list.count
-//    }
-    func getList() -> ([String],Int) {
-        (list,list.count)
+    func getList() -> [String] {
+        list
     }
 }

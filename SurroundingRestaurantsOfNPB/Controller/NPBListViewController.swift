@@ -26,7 +26,7 @@ final class NPBListViewController: UIViewController {
 
 extension NPBListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        StadiumNamesListManager.shared.getList()
+        StadiumNamesListManager.shared.getList().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
