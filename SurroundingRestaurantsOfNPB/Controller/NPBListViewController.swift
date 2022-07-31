@@ -31,7 +31,8 @@ extension NPBListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: NPBListCell.className, for: indexPath) as? NPBListCell else { return UITableViewCell() }
-        cell.setupStadiumName(name: StadiumNamesListManager.shared.getList()[indexPath.row])
+        let name = StadiumNamesListManager.shared.getList()[indexPath.row]
+        cell.setupStadiumName(name: name)
         return cell
     }
 }
