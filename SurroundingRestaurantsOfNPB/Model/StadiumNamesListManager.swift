@@ -16,3 +16,5 @@ final class StadiumNamesListManager {
         list
     }
 }
+
+//slackテスト
