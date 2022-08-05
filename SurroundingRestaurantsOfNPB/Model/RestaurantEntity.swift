@@ -8,20 +8,20 @@
 import Foundation
 //レスポンスで返ってきたJSONを保持する型
 struct RestaurantEntity: Decodable{
-//    let apiversion:String
-//    let resultsavailable:Int
-//    let resultsreturned:String
-//    let resultsstart:Int
+    let apiversion:String
+    let resultsavailable:Int
+    let resultsreturned:String
+    let resultsstart:Int
     let shop:[Shop]
 }
-//enum CodingKeys: String, CodingKey {
-//    case apiVersion = "api_version"
-//    case resultsAvailable = "results_available"
-//    case resultsReturned = "results_returned"
-//    case resultsStart = "results_start"
-//    case shop
-//}
-//
+enum CodingKeys: String, CodingKey {
+    case apiVersion = "api_version"
+    case resultsAvailable = "results_available"
+    case resultsReturned = "results_returned"
+    case resultsStart = "results_start"
+    case shop
+}
+
 struct Shop: Decodable {
     let id:String
     let name:String
