@@ -15,16 +15,19 @@ struct RestaurantInfoManager {
         // ハヌリ 新宿東口ゴジラ通り店でtest
         urlComponents.queryItems = [
             URLQueryItem(name: "key", value: key),
-            URLQueryItem(name: "name", value: "ハヌリ 新宿東口ゴジラ通り店"),
-            URLQueryItem(name: "id", value: "J001147047"),
-            URLQueryItem(name: "name_kana", value: "わぶたやきにく　さむぎょぷさる　くろげわぎゅう　はぬり　しんじゅくひがしぐちごじらどおりてん"),
-            URLQueryItem(name: "address", value: "東京都新宿区歌舞伎町１－１８－９－９F"),
-
+//            URLQueryItem(name: "name", value: "ハヌリ 新宿東口ゴジラ通り店"),
+//            URLQueryItem(name: "id", value: "J001147047"),
+//            URLQueryItem(name: "name_kana", value: "わぶたやきにく　さむぎょぷさる　くろげわぎゅう　はぬり　しんじゅくひがしぐちごじらどおりてん"),
+//            URLQueryItem(name: "address", value: "東京都新宿区歌舞伎町１－１８－９－９F"),
         ]
-     
+
         guard let requestURL = urlComponents.url else { return }
 
         let task = URLSession.shared.dataTask(with: requestURL) { jsonData, respons, error in
+            
+            if let error = error {
+                print("💦",error.localizedDescription)
+            }
 
             guard let jsonData = jsonData else { return }
 
@@ -32,12 +35,10 @@ struct RestaurantInfoManager {
                 let entity =  try JSONDecoder().decode(RestaurantEntity.self, from: jsonData)
                 print("😇",entity)
             } catch {
-                print(error.localizedDescription)
+                print("💭",error.localizedDescription)
             }
 
         }
         task.resume()
     }
-    
 }
-

@@ -6,29 +6,67 @@
 //
 
 import Foundation
-
 //レスポンスで返ってきたJSONを保持する型
 struct RestaurantEntity: Decodable{
-    let api_version:Int
-    let results_available:Int
-    let results_returned:Int
-    let results_start:Int
-    let shop:Shop
-//    let small_area:[Small_area]?
-
+//    let apiversion:String
+//    let resultsavailable:Int
+//    let resultsreturned:String
+//    let resultsstart:Int
+    let shop:[Shop]
 }
-
-struct Shop:Decodable {
-    let id:Int
+//enum CodingKeys: String, CodingKey {
+//    case apiVersion = "api_version"
+//    case resultsAvailable = "results_available"
+//    case resultsReturned = "results_returned"
+//    case resultsStart = "results_start"
+//    case shop
+//}
+//
+struct Shop: Decodable {
+    let id:String
     let name:String
-    let logo_image:String
-    let name_kana:String
+    let logoimage:URL?
+    let namekana:String?
     let address:String
-    let station_name:String
-    let ktai_coupon:Int
+    let stationname:String?
+    let ktaicoupon:String?
+}
+enum CodingKeys2: String, CodingKey {
+        case id
+        case name
+        case logoImage = "logo_image"
+        case nameKana = "name_kana"
+        case address
+        case stationName = "station_name"
+        case ktaiCoupon = "ktai_coupon"
 }
 
-//struct Small_area:Decodable {
-//    let code:Int
-//    let name:String
+
+
+
+//
+//struct Area: Decodable {
+//    let code: String
+//    let name: String
+//}
+//
+//struct Genre: Decodable {
+//    let code: String?
+//    let name: String
+//}
+//
+//struct Urls: Decodable {
+//    let sp: URL?
+//}
+//
+//struct Photo: Decodable {
+//
+//    let pc: ImageUrl
+//    let mobile: ImageUrl?
+//}
+//
+//struct ImageUrl: Decodable {
+//    let l: URL
+//    let m: URL?
+//    let s: URL
 //}
