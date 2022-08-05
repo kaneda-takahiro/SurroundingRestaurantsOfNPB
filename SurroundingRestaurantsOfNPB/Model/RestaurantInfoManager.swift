@@ -39,6 +39,7 @@ struct RestaurantInfoManager {
                 print("😇",entity)
                 print("テスト")
                 print(entity.shop?[0].address)
+                print(entity.shop?[0].id)
             } catch {
                 print("💭",error.localizedDescription)
             }
