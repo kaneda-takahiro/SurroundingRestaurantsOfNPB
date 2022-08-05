@@ -32,15 +32,16 @@ struct RestaurantInfoManager {
             
             guard let jsonData = jsonData else { return }
             let test = String(data: jsonData, encoding: .utf8)!
-                print("😇",test)
+                print("📝",test)
 
             do {
                 let entity = try JSONDecoder().decode(RestaurantEntity.self, from: jsonData)
                 print("😇",entity)
+                print("テスト")
+                print(entity.shop?[0].address)
             } catch {
                 print("💭",error.localizedDescription)
             }
-
         }
         task.resume()
     }
