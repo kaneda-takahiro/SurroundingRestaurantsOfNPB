@@ -8,22 +8,19 @@
 import Foundation
 
 struct RestaurantInfoManager {
-    static func fetchTest(key: String) {
+    static func fetchRestaurant(key: String) {
         let baseURL = "https://webservice.recruit.co.jp/hotpepper/gourmet/v1/"
 
         guard var urlComponents = URLComponents(string: baseURL) else { return }
-        // ハヌリ 新宿東口ゴジラ通り店でtest
+        // 町家和食 隠れ家個室居酒屋 茶屋 八重洲日本橋店でテスト
         urlComponents.queryItems = [
             URLQueryItem(name: "key", value: key),
             URLQueryItem(name: "format", value: "json"),
-            URLQueryItem(name: "name", value: "ハヌリ 新宿東口ゴジラ通り店"),
-//            URLQueryItem(name: "id", value: "J001147047"),
-//            URLQueryItem(name: "name_kana", value: "わぶたやきにく　さむぎょぷさる　くろげわぎゅう　はぬり　しんじゅくひがしぐちごじらどおりてん"),
-//            URLQueryItem(name: "address", value: "東京都新宿区歌舞伎町１－１８－９－９F"),
+            URLQueryItem(name: "name", value: "町家和食 隠れ家個室居酒屋 茶屋 八重洲日本橋店"),
         ]
-
+        
         guard let requestURL = urlComponents.url else { return }
-
+        
         let task = URLSession.shared.dataTask(with: requestURL) { jsonData, respons, error in
             
             if let error = error {
@@ -32,14 +29,12 @@ struct RestaurantInfoManager {
             
             guard let jsonData = jsonData else { return }
             let test = String(data: jsonData, encoding: .utf8)!
-                print("📝",test)
-
+            print("📝",test)
+            
             do {
                 let entity = try JSONDecoder().decode(RestaurantEntity.self, from: jsonData)
                 print("😇",entity)
-                print("テスト")
-                print(entity.shop?[0].address)
-                print(entity.shop?[0].id)
+                
             } catch {
                 print("💭",error.localizedDescription)
             }
