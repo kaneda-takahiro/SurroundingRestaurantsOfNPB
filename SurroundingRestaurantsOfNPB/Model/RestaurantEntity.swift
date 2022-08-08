@@ -6,16 +6,17 @@
 //
 
 import Foundation
+import CoreLocation
 
-struct RestaurantEntity: Decodable {
+struct Restaurant: Decodable {
     let results: Result
 }
 
 struct Result: Decodable {
-    let apiVersion: String?
-    let resultsAvailable: Int
-    let resultsReturned: String
-    let resultsStart: Int
+    let apiVersion: String // APIバージョン
+    let resultsAvailable: Int // クエリー条件にマッチする、検索結果の全件数
+    let resultsReturned: String //検索結果の件数
+    let resultsStart: Int //検索結果の開始位置
     let shop: [Shop]
     
     enum CodingKeys: String, CodingKey {
@@ -27,63 +28,63 @@ struct Result: Decodable {
     }
 }
 
-struct Shop: Decodable,Identifiable {
-    let id: String
-    let name: String
-    let logoImage: URL?
-    let nameKana: String?
-    let address: String
-    let stationName: String?
-    let ktaiCoupon: String?
-    let largeServiceArea: Area?
-    let serviceArea: Area?
-    let largeArea: Area?
-    let middleArea: Area?
-    let smallArea: Area?
-    let genre: Genre
-    let subGenre: Genre?
-    let budget: Budget?
-    let budgetMemo: String?
-    let `catch`: String
-    let capacity: Int
-    let access: String
-    let mobileAccess: String?
-    let urls: Urls
-    let photo: Photo
-    let open: String?
-    let close: String?
-    let partyCapacity: String?
-    let wifi: String?
-    let wedding: String?
-    let course: String?
-    let freeDrink: String?
-    let freeFood: String?
-    let privateRoom: String?
-    let horigotatsu: String?
-    let tatami: String?
-    let card: String?
-    let nonSmoking: String?
-    let charter: String?
-    let ktai: String?
-    let parking: String?
-    let barrierFree: String?
-    let otherMemo: String?
-    let sommelier: String?
-    let openAir: String?
-    let show: String?
-    let equipment: String?
-    let karaoke: String?
-    let band: String?
-    let tv: String?
-    let english: String?
-    let pet: String?
-    let child: String?
-    let lunch: String?
-    let midnight: String?
-    let shopDetailMemo: String?
-    let couponUrls: Urls?
-    
-    enum CodingKeys2: String, CodingKey {
+struct Shop: Decodable {
+    let id: String //お店ID
+    let name: String //掲載店名
+    let logoImage: URL? //ロゴ画像
+    let nameKana: String? //掲載店名かな
+    let address: String //住所
+    let stationName: String? //最寄駅名
+    let ktaiCoupon: Int//携帯用クーポン掲載
+    let largeServiceArea: Area? //大サービスエリア
+    let serviceArea: Area? //サービスエリア
+    let largeArea: Area? //大エリア
+    let middleArea: Area? //中エリア
+    let smallArea: Area? //小エリア
+    let genre: Genre //お店ジャンル
+    let subGenre: Genre? //お店サブジャンル
+    let budget: Budget? //ディナー予算
+    let budgetMemo: String? //料金備考
+    let `catch`: String //お店キャッチ
+    let capacity: Int //総席数
+    let access: String //交通アクセス
+    let mobileAccess: String? //携帯用交通アクセス
+    let urls: Urls //店舗URL
+    let photo: Photo //写真
+    let open: String? //営業時間
+    let close: String? //定休日
+    let partyCapacity: Int //最大宴会収容人数
+    let wifi: String? //WiFi有無
+    let wedding: String? //ウェディング･二次会
+    let course: String? //コース有無
+    let freeDrink: String? //飲み放題
+    let freeFood: String?  //食べ放題
+    let privateRoom: String? //個室
+    let horigotatsu: String? //掘りごたつ
+    let tatami: String? //座敷
+    let card: String? //カード可
+    let nonSmoking: String? //禁煙席
+    let charter: String? //貸切可
+    let ktai: String? //携帯電話OK
+    let parking: String? //駐車場
+    let barrierFree: String? //バリアフリー
+    let otherMemo: String? //その他設備
+    let sommelier: String? //ソムリエ
+    let openAir: String? //オープンエア
+    let show: String?//ライブ・ショー
+    let equipment: String? //エンタメ設備
+    let karaoke: String? //カラオケ
+    let band: String? //バンド演奏可
+    let tv: String? //TV・プロジェクター
+    let english: String? //英語メニュー
+    let pet: String? //ペット可
+    let child: String? //お子様連れ
+    let lunch: String? //ランチ
+    let midnight: String? //23時以降も営業
+    let shopDetailMemo: String? //備考
+    let couponUrls: Urls? //クーポンURL
+
+    enum CodingKeys: String, CodingKey {
         case id
         case name
         case logoImage = "logo_image"
@@ -96,8 +97,6 @@ struct Shop: Decodable,Identifiable {
         case largeArea = "large_area"
         case middleArea = "middle_area"
         case smallArea = "small_area"
-        case lat
-        case lng
         case genre
         case subGenre = "sub_genre"
         case budget
@@ -166,7 +165,7 @@ struct Urls: Decodable {
 }
 
 struct Photo: Decodable {
-    
+
     let pc: ImageUrl
     let mobile: ImageUrl?
     
