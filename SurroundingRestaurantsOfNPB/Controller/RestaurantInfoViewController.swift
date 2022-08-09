@@ -20,6 +20,7 @@ final class RestaurantInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        RestaurantInfoManager.fetchRestaurant()
     }
 }
 

@@ -24,6 +24,8 @@
 		D20960F02882CDD5008AA77D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20960EF2882CDD5008AA77D /* Main.storyboard */; };
 		D2C1144228881AE50018627C /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C1144128881AE50018627C /* UIViewController+.swift */; };
 		D2C114442890AE400018627C /* StadiumNamesListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C114432890AE400018627C /* StadiumNamesListManager.swift */; };
+		D2C11446289A3C430018627C /* RestaurantInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C11445289A3C420018627C /* RestaurantInfoManager.swift */; };
+		D2C11448289BB9870018627C /* RestaurantEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C11447289BB9860018627C /* RestaurantEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		D20960EF2882CDD5008AA77D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D2C1144128881AE50018627C /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		D2C114432890AE400018627C /* StadiumNamesListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadiumNamesListManager.swift; sourceTree = "<group>"; };
+		D2C11445289A3C420018627C /* RestaurantInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfoManager.swift; sourceTree = "<group>"; };
+		D2C11447289BB9860018627C /* RestaurantEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				D2C114432890AE400018627C /* StadiumNamesListManager.swift */,
+				D2C11445289A3C420018627C /* RestaurantInfoManager.swift */,
+				D2C11447289BB9860018627C /* RestaurantEntity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -322,11 +328,13 @@
 			files = (
 				D20960C3287BDF69008AA77D /* NSObject+.swift in Sources */,
 				D2C114442890AE400018627C /* StadiumNamesListManager.swift in Sources */,
+				D2C11446289A3C430018627C /* RestaurantInfoManager.swift in Sources */,
 				D20960862876B28B008AA77D /* NPBListViewController.swift in Sources */,
 				D2C1144228881AE50018627C /* UIViewController+.swift in Sources */,
 				D20960E1287FF9EF008AA77D /* RestaurantInfoCell.swift in Sources */,
 				D20960DD287D6973008AA77D /* NPBListCell.swift in Sources */,
 				D20960E4287FFD84008AA77D /* RestaurantInfoViewController.swift in Sources */,
+				D2C11448289BB9870018627C /* RestaurantEntity.swift in Sources */,
 				D20960822876B28B008AA77D /* AppDelegate.swift in Sources */,
 				D20960842876B28B008AA77D /* SceneDelegate.swift in Sources */,
 			);
