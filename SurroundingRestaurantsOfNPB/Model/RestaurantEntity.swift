@@ -14,10 +14,10 @@ struct Restaurant: Decodable {
 }
 
 struct Result: Decodable {
-    let apiVersion: String // APIバージョン
-    let resultsAvailable: Int // クエリー条件にマッチする、検索結果の全件数
-    let resultsReturned: String // 検索結果の件数
-    let resultsStart: Int // 検索結果の開始位置
+    let apiVersion: String         // APIバージョン
+    let resultsAvailable: Int      // クエリー条件にマッチする、検索結果の全件数
+    let resultsReturned: String    // 検索結果の件数
+    let resultsStart: Int          // 検索結果の開始位置
     let shop: [Shop]
     
     enum CodingKeys: String, CodingKey {
