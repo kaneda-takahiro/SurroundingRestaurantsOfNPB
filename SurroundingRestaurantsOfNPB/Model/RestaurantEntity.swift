@@ -10,7 +10,7 @@ import CoreLocation
 
 // TODO: 後でプロパティを精査して不要なものは削除予定
 struct Restaurant: Decodable {
-    let results: Result
+    let results: Result            // 結果一覧
 }
 
 struct Result: Decodable {
@@ -18,7 +18,7 @@ struct Result: Decodable {
     let resultsAvailable: Int      // クエリー条件にマッチする、検索結果の全件数
     let resultsReturned: String    // 検索結果の件数
     let resultsStart: Int          // 検索結果の開始位置
-    let shop: [Shop]
+    let shop: [Shop]               // お店情報一覧
     
     enum CodingKeys: String, CodingKey {
         case apiVersion = "api_version"
