@@ -144,8 +144,8 @@ struct Shop: Decodable {
 }
 
 struct Area: Decodable {
-    let code: String         // エリアコード
-    let name: String         // エリア名
+    let code: String          // エリアコード
+    let name: String          // エリア名
 }
 
 struct Genre: Decodable {
