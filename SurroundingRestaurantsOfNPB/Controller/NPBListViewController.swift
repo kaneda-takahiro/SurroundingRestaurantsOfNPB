@@ -18,7 +18,6 @@ final class NPBListViewController: UIViewController {
             tableView.separatorColor = .black
         }
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
