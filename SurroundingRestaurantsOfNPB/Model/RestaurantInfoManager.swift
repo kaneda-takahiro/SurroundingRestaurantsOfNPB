@@ -8,7 +8,7 @@
 import Foundation
 
 struct RestaurantInfoManager {
-    static func fetchRestaurant() {
+    static func fetchRestaurant(completion: @escaping () -> Void ) {
         let baseURL = "https://webservice.recruit.co.jp/hotpepper/gourmet/v1/"
 
         guard var urlComponents = URLComponents(string: baseURL) else { return }
@@ -30,6 +30,7 @@ struct RestaurantInfoManager {
            guard let jsonData = jsonData else { return }
             do {
                 let entity = try JSONDecoder().decode(Restaurant.self, from: jsonData)
+                completion()
                 print("😇",entity)
                 
             } catch {

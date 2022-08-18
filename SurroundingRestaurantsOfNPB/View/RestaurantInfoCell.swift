@@ -10,13 +10,12 @@ import UIKit
 final class RestaurantInfoCell: UITableViewCell {
     
     @IBOutlet private weak var thumbnailImageView: UIImageView!
-    
     @IBOutlet private weak var nameLabel: UILabel!
-    
     @IBOutlet private weak var genreLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        setNameLabel()
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
