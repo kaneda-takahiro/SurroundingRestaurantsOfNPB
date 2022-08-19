@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct RestaurantInfoManager {
-    static func fetchRestaurant(completion: @escaping () -> Void ) {
+class RestaurantInfoManager {
+    static func fetchRestaurant(completion: @escaping (Restaurant) -> Void ) {
         let baseURL = "https://webservice.recruit.co.jp/hotpepper/gourmet/v1/"
 
         guard var urlComponents = URLComponents(string: baseURL) else { return }
@@ -16,13 +16,13 @@ struct RestaurantInfoManager {
         urlComponents.queryItems = [
             URLQueryItem(name: "key", value: "206a377d449a9c59"),
             URLQueryItem(name: "format", value: "json"),
-            URLQueryItem(name: "name", value: "町家和食 隠れ家個室居酒屋 茶屋 八重洲日本橋店"),
+            URLQueryItem(name: "small_area", value: "X232"),
         ]
         
         guard let requestURL = urlComponents.url else { return }
         
         let task = URLSession.shared.dataTask(with: requestURL) { jsonData, _, error in
-            
+            print("レスポンス")
             if let error = error {
                 print("💦",error.localizedDescription)
             }
@@ -30,13 +30,14 @@ struct RestaurantInfoManager {
            guard let jsonData = jsonData else { return }
             do {
                 let entity = try JSONDecoder().decode(Restaurant.self, from: jsonData)
-                completion()
+                completion(entity)
                 print("😇",entity)
                 
             } catch {
                 print("💭",error.localizedDescription)
             }
         }
+        print("リクエスト")
         task.resume()
     }
 }

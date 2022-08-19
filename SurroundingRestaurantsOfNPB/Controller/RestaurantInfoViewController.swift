@@ -8,7 +8,7 @@
 import UIKit
 
 final class RestaurantInfoViewController: UIViewController {
-    
+//    let aaa = Result(from: resultsReturned)
     @IBOutlet private weak var restaurantTableView: UITableView! {
         didSet {
             let nib = UINib(nibName: RestaurantInfoCell.className, bundle: nil)
@@ -20,17 +20,31 @@ final class RestaurantInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        }
     }
-}
 
 extension RestaurantInfoViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // TODO: 仮置き。API連携で取得した球場周辺のレストラン数に修正予定
-        15
+        10
+//        aaa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = restaurantTableView.dequeueReusableCell(withIdentifier: RestaurantInfoCell.className, for: indexPath) as? RestaurantInfoCell else { return UITableViewCell() }
         return cell
     }
+    
+//    func test() {
+//        RestaurantInfoManager.fetchRestaurant { restaurant in
+//            cell.setNameLabel(entity: restaurant)
+//        }
+//    }
 }
+
+//extension Result {
+//    init() {
+//        resultsReturned = "aaa"
+//    }
+//
+//}

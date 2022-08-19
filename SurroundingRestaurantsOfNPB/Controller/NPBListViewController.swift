@@ -39,9 +39,6 @@ extension NPBListViewController: UITableViewDataSource {
 extension NPBListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         transion(to: RestaurantInfoViewController.className)
-        RestaurantInfoManager.fetchRestaurant {
-//            RestaurantInfoCell.setNameLabel()
-        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
