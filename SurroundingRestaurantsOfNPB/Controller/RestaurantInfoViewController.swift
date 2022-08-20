@@ -8,7 +8,9 @@
 import UIKit
 
 final class RestaurantInfoViewController: UIViewController {
-//    let aaa = Result(from: resultsReturned)
+  
+//    let result: Decodable = Result(from: Decoder)
+
     @IBOutlet private weak var restaurantTableView: UITableView! {
         didSet {
             let nib = UINib(nibName: RestaurantInfoCell.className, bundle: nil)
@@ -24,10 +26,11 @@ final class RestaurantInfoViewController: UIViewController {
     }
 
 extension RestaurantInfoViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // TODO: 仮置き。API連携で取得した球場周辺のレストラン数に修正予定
-        10
-//        aaa
+        1
+//        result
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
