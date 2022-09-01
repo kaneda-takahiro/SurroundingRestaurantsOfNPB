@@ -22,6 +22,10 @@ final class RestaurantInfoCell: UITableViewCell {
     }
     
     func setNameLabel(entity: Restaurant) {
-        print("nameLabelプロパティにレスポンスで返ってきた値を入れる")
+        guard let shop = entity.results.shop.first else { return }
+        let shopName = shop.name
+        nameLabel.text = shopName
     }
 }
+//Entityの中のShopのnameプロパティにアクセスしたい
+//shopNameはstring型にしたい→なってる
