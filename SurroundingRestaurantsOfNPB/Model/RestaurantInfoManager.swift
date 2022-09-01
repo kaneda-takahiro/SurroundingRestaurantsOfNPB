@@ -12,11 +12,10 @@ class RestaurantInfoManager {
         let baseURL = "https://webservice.recruit.co.jp/hotpepper/gourmet/v1/"
 
         guard var urlComponents = URLComponents(string: baseURL) else { return }
-        // 町家和食 隠れ家個室居酒屋 茶屋 八重洲日本橋店でテスト
         urlComponents.queryItems = [
             URLQueryItem(name: "key", value: "206a377d449a9c59"),
             URLQueryItem(name: "format", value: "json"),
-            URLQueryItem(name: "small_area", value: "X232"),
+            URLQueryItem(name: "small_area", value: "X150"),
         ]
         
         guard let requestURL = urlComponents.url else { return }

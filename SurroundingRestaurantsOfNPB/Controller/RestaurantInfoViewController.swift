@@ -47,8 +47,9 @@ extension RestaurantInfoViewController: UITableViewDataSource {
         guard let cell = restaurantTableView.dequeueReusableCell(withIdentifier: RestaurantInfoCell.className, for: indexPath) as? RestaurantInfoCell else { return UITableViewCell() }
         guard let restaurant = restaurant else { return cell }
         cell.setNameLabel(entity: restaurant)
+        cell.setGenreLabel(entity: restaurant)
+        cell.setThumbnailImageView(entity: restaurant)
         return cell
-        
     }
 }
 

@@ -35,10 +35,10 @@ struct Shop: Decodable {
     let nameKana: String?       // 掲載店名かな
     let address: String         // 住所
     let stationName: String?    // 最寄駅名
-    let largeServiceArea: Area? // 大サービスエリア
-    let serviceArea: Area?      // サービスエリア
-    let largeArea: Area?        // 大エリア
-    let middleArea: Area?       // 中エリア
+//    let largeServiceArea: Area? // 大サービスエリア
+//    let serviceArea: Area?      // サービスエリア
+//    let largeArea: Area?        // 大エリア
+//    let middleArea: Area?       // 中エリア
     let smallArea: Area?        // 小エリア
     let genre: Genre            // お店ジャンル
     let subGenre: Genre?        // お店サブジャンル
@@ -51,10 +51,10 @@ struct Shop: Decodable {
         case nameKana = "name_kana"
         case address
         case stationName = "station_name"
-        case largeServiceArea = "large_service_area"
-        case serviceArea = "service_area"
-        case largeArea = "large_area"
-        case middleArea = "middle_area"
+//        case largeServiceArea = "large_service_area"
+//        case serviceArea = "service_area"
+//        case largeArea = "large_area"
+//        case middleArea = "middle_area"
         case smallArea = "small_area"
         case genre
         case subGenre = "sub_genre"
@@ -70,7 +70,7 @@ struct Area: Decodable {
 struct Genre: Decodable {
     let code: String?         // お店ジャンルコード
     let name: String          // お店ジャンル名
-    let `catch`: String?      // お店ジャンルキャッチ
+//    let `catch`: String?      // お店ジャンルキャッチ
 }
 
 struct Photo: Decodable {
