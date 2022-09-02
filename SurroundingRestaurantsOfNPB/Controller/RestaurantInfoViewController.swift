@@ -28,7 +28,6 @@ final class RestaurantInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Thread.current.isMainThread",Thread.current.isMainThread)
         RestaurantInfoManager.fetchRestaurant { restaurant in
             self.restaurant = restaurant
         }

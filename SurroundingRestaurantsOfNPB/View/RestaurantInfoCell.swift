@@ -37,7 +37,6 @@ final class RestaurantInfoCell: UITableViewCell {
         guard let shop = entity.results.shop.first else { return }
         guard let shopThumbnailImage = shop.logoImage else { return }
         thumbnailImageView.setImageByDefault(with: shopThumbnailImage)
-        print("📩",shopThumbnailImage)
     }
 }
 
@@ -53,6 +52,3 @@ extension UIImageView {
         .resume()
     }
 }
-
-//Entityの中のShopのnameプロパティにアクセスしたい
-//shopNameはstring型にしたい→なってる
